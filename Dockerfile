@@ -7,12 +7,12 @@ RUN apt-get update && \
     docker-php-ext-install gd && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-COPY composer.* /var/www/html/
 COPY . /var/www/html/
 
 WORKDIR /var/www/html
 
-RUN composer install --no-dev --no-scripts
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
-CMD ["php", "-S", "0.0.0.0:8000", "public/index.php"]
+CMD ["entrypoint.sh"]
 

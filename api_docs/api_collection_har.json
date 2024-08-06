@@ -1,0 +1,167 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v9.3.3"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2024-08-06T23:03:21.893Z",
+				"time": 2.52,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/users",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/9.3.3"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Basic YWRtaW46YWRtaW4="
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 06 Aug 2024 22:58:25 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.3.10"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"content": {
+						"size": 1716,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"name\":\"John Doe\",\"gender\":\"Male\",\"age\":30,\"address\":\"123 Elm Street\"},{\"id\":2,\"name\":\"Jane Smith\",\"gender\":\"Female\",\"age\":25,\"address\":\"456 Oak Avenue\"},{\"id\":3,\"name\":\"Michael Brown\",\"gender\":\"Male\",\"age\":40,\"address\":\"789 Pine Road\"},{\"id\":4,\"name\":\"Emily White\",\"gender\":\"Female\",\"age\":35,\"address\":\"321 Maple Lane\"},{\"id\":5,\"name\":\"David Wilson\",\"gender\":\"Male\",\"age\":28,\"address\":\"654 Birch Boulevard\"},{\"id\":6,\"name\":\"Sophia Taylor\",\"gender\":\"Female\",\"age\":22,\"address\":\"987 Cedar Street\"},{\"id\":7,\"name\":\"James Anderson\",\"gender\":\"Male\",\"age\":45,\"address\":\"123 Spruce Court\"},{\"id\":8,\"name\":\"Olivia Martin\",\"gender\":\"Female\",\"age\":33,\"address\":\"456 Willow Drive\"},{\"id\":9,\"name\":\"Daniel Lee\",\"gender\":\"Male\",\"age\":50,\"address\":\"789 Fir Avenue\"},{\"id\":10,\"name\":\"Isabella Thompson\",\"gender\":\"Female\",\"age\":27,\"address\":\"321 Aspen Road\"},{\"id\":11,\"name\":\"William Harris\",\"gender\":\"Male\",\"age\":38,\"address\":\"654 Poplar Street\"},{\"id\":12,\"name\":\"Mia Clark\",\"gender\":\"Female\",\"age\":29,\"address\":\"987 Redwood Lane\"},{\"id\":13,\"name\":\"Henry Lewis\",\"gender\":\"Male\",\"age\":42,\"address\":\"123 Alder Boulevard\"},{\"id\":14,\"name\":\"Ava Walker\",\"gender\":\"Female\",\"age\":24,\"address\":\"456 Cypress Court\"},{\"id\":15,\"name\":\"Lucas King\",\"gender\":\"Male\",\"age\":31,\"address\":\"789 Elm Street\"},{\"id\":16,\"name\":\"Charlotte Hall\",\"gender\":\"Female\",\"age\":26,\"address\":\"321 Oak Avenue\"},{\"id\":17,\"name\":\"Mason Allen\",\"gender\":\"Male\",\"age\":36,\"address\":\"654 Pine Road\"},{\"id\":18,\"name\":\"Amelia Young\",\"gender\":\"Female\",\"age\":23,\"address\":\"987 Maple Lane\"},{\"id\":19,\"name\":\"Ethan Scott\",\"gender\":\"Male\",\"age\":47,\"address\":\"123 Birch Boulevard\"},{\"id\":20,\"name\":\"Harper Green\",\"gender\":\"Female\",\"age\":32,\"address\":\"456 Cedar Street\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.52,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "users"
+			},
+			{
+				"startedDateTime": "2024-08-06T23:03:21.893Z",
+				"time": 2.589,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8000/users/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/9.3.3"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Basic YWRtaW46YWRtaW4="
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 06 Aug 2024 22:58:22 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						},
+						{
+							"name": "X-Powered-By",
+							"value": "PHP/8.3.10"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"content": {
+						"size": 78,
+						"mimeType": "application/json",
+						"text": "{\"id\":1,\"name\":\"John Doe\",\"gender\":\"Male\",\"age\":30,\"address\":\"123 Elm Street\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.589,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "user"
+			}
+		]
+	}
+}

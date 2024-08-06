@@ -22,7 +22,7 @@ class Config
 
     private function loadDirectoryConfig(): void
     {
-        foreach (glob('config/*.php') as $file) {
+        foreach (glob(__DIR__ . '/../config/*.php') as $file) {
             $this->config[basename($file, '.php')] = require $file;
         }
     }
