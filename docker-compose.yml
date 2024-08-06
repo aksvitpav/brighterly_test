@@ -1,0 +1,17 @@
+services:
+  api:
+    container_name: brighterly_api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    name: brighterly_network
+    driver: bridge
